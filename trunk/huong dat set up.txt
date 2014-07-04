@@ -1,0 +1,9 @@
+Sau khi check out code ve moi nguoi set mot so buoc cai dat, 
+luu y la moi nguoi dat thu muc check out trong xampp hoac wamp luon, ten thuc muc
+phai la tripdeal hoac neu co doi ten khac thi phai chinh lai duong dan trong file config.php va admin/config.php
+1. cai dat database
+	- database name: tripdeal
+	- user: root
+	- pass: 
+2. Neu no bao loi CURL thi moi nguoi vo thu muc xampp->php->php.ini hoac wamp->php->php.ini roi
+uncomment ai dong extension=php_curl.dll
