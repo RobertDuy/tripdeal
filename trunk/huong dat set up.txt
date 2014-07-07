@@ -7,3 +7,6 @@ phai la tripdeal hoac neu co doi ten khac thi phai chinh lai duong dan trong fil
 	- pass: 
 2. Neu no bao loi CURL thi moi nguoi vo thu muc xampp->php->php.ini hoac wamp->php->php.ini roi
 uncomment ai dong extension=php_curl.dll
+
+3. Trong do co database luon roi do nha. Moi nguoi khi lam co thay doi gi tren database thi export ra, dat ten nhu
+cach tui dat ten( phia sau la version: chu cai ten cua ai lam, tiep theo la ngay export) roi commit len nha.
