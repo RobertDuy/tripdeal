@@ -2,6 +2,8 @@
 // Heading 
 $_['heading_title']   = 'Bạn Quên Mật Khẩu?';
 
+
+
 // Text
 $_['text_account']    = 'Tài Khoản';
 $_['text_forgotten']  = 'Quên Mật Khẩu';
