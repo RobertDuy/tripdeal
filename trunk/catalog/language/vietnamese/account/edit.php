@@ -2,6 +2,8 @@
 // Heading 
 $_['heading_title']     = 'Thông Tin Tài Khoản';
 
+
+
 // Text
 $_['text_account']      = 'Tài khoản';
 $_['text_edit']         = 'Sửa thông tin';
