@@ -13,6 +13,7 @@ class Language {
 	}
 
 	public function load($filename) {
+	   
 		$file = DIR_LANGUAGE . $this->directory . '/' . $filename . '.php';
 
 		if (file_exists($file)) {
@@ -26,7 +27,7 @@ class Language {
 		}
 
 		$file = DIR_LANGUAGE . $this->default . '/' . $filename . '.php';
-
+       
 		if (file_exists($file)) {
 			$_ = array();
 
