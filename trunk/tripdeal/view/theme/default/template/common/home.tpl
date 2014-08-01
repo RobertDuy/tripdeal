@@ -103,8 +103,10 @@
 <div class="wrapContent">
     <div class="container">
         <div class="divContent">
-            <p class="titleName">Deal má»›i nháº­n</p>
+            <p class="titleName">Deal moi nhan</p>
             <div class="divProduct">
+
+                <!-- PHP CODE LOAD DEAL MOI NHAN HERE-->
                 <div class="autoSizeProd">
                     <div class="itemProd">
                         <a href="/openstore/?route=travel/detail" class="imgProd">
@@ -116,12 +118,12 @@
                             <div class="divPriceInfo">
                                 <div class="priceOff">10<i>%</i></div>
                                 <div class="price">
-                                    <p class="priceSale">500.000Ä‘</p>
-                                    <p class="priceNews">400.000<sup>Ä‘</sup></p>
+                                    <p class="priceSale">500.000d</p>
+                                    <p class="priceNews">400.000<sup>d</sup></p>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="dateNumber">5 ngÃ y 4 Ä‘Ãªm</div>
+                            <div class="dateNumber">5 ngay 4 dem</div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="divMeta">
@@ -130,82 +132,11 @@
                         <i class="icSale"></i>
                     </div>
                 </div>
-                <div class="autoSizeProd">
-                    <div class="itemProd">
-                        <a href="#" class="imgProd">
-                            <img src="tripdeal/view/theme/default/image/issets/inboundTour.jpg">
-                            <div class="mask"></div>
-                        </a>
-                        <div class="desProd1">
-                            <p class="name"><a href="#"> Du lich thai lan 5 sao:  Bangkok, Pattaya</a></p>
-                            <div class="divPriceInfo">
-                                <div class="priceOff">10<i>%</i></div>
-                                <div class="price">
-                                    <p class="priceSale">500.000Ä‘</p>
-                                    <p class="priceNews">400.000<sup>Ä‘</sup></p>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="dateNumber">5 ngÃ y 4 Ä‘Ãªm</div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="divMeta">
-                            <div class="icTime divCountdown"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="autoSizeProd">
-                    <div class="itemProd">
-                        <a href="#" class="imgProd">
-                            <img src="tripdeal/view/theme/default/image/issets/inboundTour.jpg">
-                            <div class="mask"></div>
-                        </a>
-                        <div class="desProd1">
-                            <p class="name"><a href="#"> Du lich thai lan 5 sao:  Bangkok, Pattaya</a></p>
-                            <div class="divPriceInfo">
-                                <div class="priceOff">10<i>%</i></div>
-                                <div class="price">
-                                    <p class="priceSale">500.000Ä‘</p>
-                                    <p class="priceNews">400.000<sup>Ä‘</sup></p>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="dateNumber">5 ngÃ y 4 Ä‘Ãªm</div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="divMeta">
-                            <div class="icTime divCountdown"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="autoSizeProd">
-                    <div class="itemProd">
-                        <a href="#" class="imgProd">
-                            <img src="tripdeal/view/theme/default/image/issets/inboundTour.jpg">
-                            <div class="mask"></div>
-                        </a>
-                        <div class="desProd1">
-                            <p class="name"><a href="#"> Du lich thai lan 5 sao:  Bangkok, Pattaya</a></p>
-                            <div class="divPriceInfo">
-                                <div class="priceOff">10<i>%</i></div>
-                                <div class="price">
-                                    <p class="priceSale">500.000Ä‘</p>
-                                    <p class="priceNews">400.000<sup>Ä‘</sup></p>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="dateNumber">5 ngÃ y 4 Ä‘Ãªm</div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="divMeta">
-                            <div class="icTime divCountdown"></div>
-                        </div>
-                    </div>
-                </div>
+                <!-- TODO -->
                 <div class="clearfix"></div>
             </div>
             <div class="divCrlt">
-                <button type="button" class="button">Xem thÃªm deal má»›i</button>
+                <button type="button" class="button">Xem them deal moi</button>
             </div>
         </div>
     </div>
@@ -224,7 +155,7 @@
                             <div class="mask"></div>
                         </a>
                         <div class="titleTour">
-                            <a href="#" class="nameTour">Tour trong nÆ°á»›c</a>
+                            <a href="#" class="nameTour">Tour trong nuoc</a>
                         </div>
                     </div>
                 </div>
@@ -235,7 +166,7 @@
                             <div class="mask"></div>
                         </a>
                         <div class="titleTour">
-                            <a href="#" class="nameTour">Tour quá»‘c táº¿</a>
+                            <a href="#" class="nameTour">Tour quoc te</a>
                         </div>
                     </div>
                 </div>
@@ -248,8 +179,10 @@
 <div class="wrapBgHome1">
     <div class="container">
         <div class="divBgHome">
-            <p class="titleN">Deal ná»•i báº­t</p>
+            <p class="titleN">Deal noi bat</p>
             <div class="divProduct">
+
+                <!-- PHP CODE LOAD DEAL NOI BAT -->
                 <div class="autoSizeProd">
                     <div class="itemProd">
                         <a href="#" class="imgProd">
@@ -261,12 +194,12 @@
                             <div class="divPriceInfo">
                                 <div class="priceOff">10<i>%</i></div>
                                 <div class="price">
-                                    <p class="priceSale">500.000Ä‘</p>
-                                    <p class="priceNews">400.000<sup>Ä‘</sup></p>
+                                    <p class="priceSale">500.000d</p>
+                                    <p class="priceNews">400.000<sup>d</sup></p>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="dateNumber">5 ngÃ y 4 Ä‘Ãªm</div>
+                            <div class="dateNumber">5 ngay 4 dem</div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="divMeta">
@@ -275,84 +208,12 @@
                         <i class="icSale"></i>
                     </div>
                 </div>
-                <div class="autoSizeProd">
-                    <div class="itemProd">
-                        <a href="#" class="imgProd">
-                            <img src="tripdeal/view/theme/default/image/issets/inboundTour.jpg">
-                            <div class="mask"></div>
-                        </a>
-                        <div class="desProd2">
-                            <p class="name"><a href="#"> Du lich thai lan 5 sao:  Bangkok, Pattaya</a></p>
-                            <div class="divPriceInfo">
-                                <div class="priceOff">10<i>%</i></div>
-                                <div class="price">
-                                    <p class="priceSale">500.000Ä‘</p>
-                                    <p class="priceNews">400.000<sup>Ä‘</sup></p>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="dateNumber">5 ngÃ y 4 Ä‘Ãªm</div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="divMeta">
-                            <div class="icTime divCountdown"></div>
-                        </div>
-                        <i class="icSale"></i>
-                    </div>
-                </div>
-                <div class="autoSizeProd">
-                    <div class="itemProd">
-                        <a href="#" class="imgProd">
-                            <img src="tripdeal/view/theme/default/image/issets/inboundTour.jpg">
-                            <div class="mask"></div>
-                        </a>
-                        <div class="desProd2">
-                            <p class="name"><a href="#"> Du lich thai lan 5 sao:  Bangkok, Pattaya</a></p>
-                            <div class="divPriceInfo">
-                                <div class="priceOff">10<i>%</i></div>
-                                <div class="price">
-                                    <p class="priceSale">500.000Ä‘</p>
-                                    <p class="priceNews">400.000<sup>Ä‘</sup></p>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="dateNumber">5 ngÃ y 4 Ä‘Ãªm</div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="divMeta">
-                            <div class="icTime divCountdown"></div>
-                        </div>
-                        <i class="icSale"></i>
-                    </div>
-                </div>
-                <div class="autoSizeProd">
-                    <div class="itemProd">
-                        <a href="#" class="imgProd">
-                            <img src="tripdeal/view/theme/default/image/issets/inboundTour.jpg">
-                            <div class="mask"></div>
-                        </a>
-                        <div class="desProd2">
-                            <p class="name"><a href="#"> Du lich thai lan 5 sao:  Bangkok, Pattaya</a></p>
-                            <div class="divPriceInfo">
-                                <div class="priceOff">10<i>%</i></div>
-                                <div class="price">
-                                    <p class="priceSale">500.000Ä‘</p>
-                                    <p class="priceNews">400.000<sup>Ä‘</sup></p>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="dateNumber">5 ngÃ y 4 Ä‘Ãªm</div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="divMeta">
-                            <div class="icTime divCountdown"></div>
-                        </div>
-                    </div>
-                </div>
+                <!-- TODO more code here -->
+
                 <div class="clearfix"></div>
             </div>
             <div class="divCrlt">
-                <button type="button" class="button btColor">Xem thÃªm deal hot</button>
+                <button type="button" class="button btColor">Xem them deal hot</button>
             </div>
         </div>
     </div>
