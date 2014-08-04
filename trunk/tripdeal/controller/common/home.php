@@ -15,7 +15,8 @@ class ControllerCommonHome extends Controller {
         $this->children = array(
             'common/header',
             'common/footer',
-            'common/product_portrait'
+            'common/product_new_receive',
+            'common/product_special'
         );
 
         $this->response->setOutput($this->render());
