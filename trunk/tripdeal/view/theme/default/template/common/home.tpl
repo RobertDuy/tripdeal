@@ -40,7 +40,7 @@
     <div class="container">
         <div class="searchBox">
             <div class="form_controls">
-                <label for="tourname">TÃ¬m nhanh tour du lá»‹ch</label>
+                <label for="tourname">Tìm nhanh tour du lịch</label>
                 <input type="text" class="textbox" placeholder="Nháº­p tÃªn tour du lá»‹ch.." name="tourname" value="" id="tourname" style="width: 195px;">
                 <input type="hidden" name="sbk_href" value="">
                 <input type="hidden" id="manual_submit" name="manual_submit" value="false">
@@ -109,7 +109,7 @@
                 <!-- PHP CODE LOAD DEAL MOI NHAN HERE-->
                 <div class="autoSizeProd">
                     <div class="itemProd">
-                        <a href="/openstore/?route=travel/detail" class="imgProd">
+                        <a href="/tripdeal/?route=travel/detail" class="imgProd">
                             <img src="tripdeal/view/theme/default/image/issets/inboundTour.jpg">
                             <div class="mask"></div>
                         </a>
