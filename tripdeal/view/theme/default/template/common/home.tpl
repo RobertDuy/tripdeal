@@ -2,7 +2,9 @@
 <!-- End divMenu -->
 <div class="wrapSilde">
     <div id="divFlexslider" class="lof-slidecontent divFlexslider">
-        <div class="preload"><div></div></div>
+        <div class="preload">
+            <div></div>
+        </div>
         <div class="main-slider-content">
             <ul class="sliders-wrap-inner">
                 <li><img src="tripdeal/view/theme/default/image/issets/sl1.png"></li>
@@ -41,7 +43,8 @@
         <div class="searchBox">
             <div class="form_controls">
                 <label for="tourname">Tìm nhanh tour du lịch</label>
-                <input type="text" class="textbox" placeholder="Nháº­p tÃªn tour du lá»‹ch.." name="tourname" value="" id="tourname" style="width: 195px;">
+                <input type="text" class="textbox" placeholder="Nháº­p tÃªn tour du lá»‹ch.." name="tourname" value=""
+                       id="tourname" style="width: 195px;">
                 <input type="hidden" name="sbk_href" value="">
                 <input type="hidden" id="manual_submit" name="manual_submit" value="false">
             </div>
@@ -95,7 +98,8 @@
                 <input type="hidden" value="false" class="bnrsearch">
             </div>
             <div class="clearfix"></div>
-        </div><!--end search box-->
+        </div>
+        <!--end search box-->
         <div class="clearfix"></div>
     </div>
 </div>
@@ -104,8 +108,9 @@
     <div class="container">
         <div class="divContent">
             <p class="titleName">Deal moi nhan</p>
+
             <div class="divProduct">
-                <?php echo $product_portrait; ?>
+                <?php echo $product_new_receive; ?>
 
                 <div id="moreNewDealDiv"></div>
                 <div class="clearfix"></div>
@@ -122,13 +127,16 @@
     <div class="container">
         <div class="divBgHome">
             <p class="titleN">Keep up and meet up with friends. See which of them are using ...</p>
+
             <div class="divProduct">
                 <div class="autoSizeProd">
                     <div class="itemProd">
                         <a href="#" class="imgProd">
                             <img src="tripdeal/view/theme/default/image/issets/inboundTour.jpg">
+
                             <div class="mask"></div>
                         </a>
+
                         <div class="titleTour">
                             <a href="#" class="nameTour">Tour trong nuoc</a>
                         </div>
@@ -138,8 +146,10 @@
                     <div class="itemProd">
                         <a href="#" class="imgProd">
                             <img src="tripdeal/view/theme/default/image/issets/inboundTour.jpg">
+
                             <div class="mask"></div>
                         </a>
+
                         <div class="titleTour">
                             <a href="#" class="nameTour">Tour quoc te</a>
                         </div>
@@ -155,35 +165,10 @@
     <div class="container">
         <div class="divBgHome">
             <p class="titleN">Deal noi bat</p>
+
             <div class="divProduct">
 
-                <!-- PHP CODE LOAD DEAL NOI BAT -->
-                <div class="autoSizeProd">
-                    <div class="itemProd">
-                        <a href="#" class="imgProd">
-                            <img src="tripdeal/view/theme/default/image/issets/inboundTour.jpg">
-                            <div class="mask"></div>
-                        </a>
-                        <div class="desProd2">
-                            <p class="name"><a href="#"> Du lich thai lan 5 sao:  Bangkok, Pattaya</a></p>
-                            <div class="divPriceInfo">
-                                <div class="priceOff">10<i>%</i></div>
-                                <div class="price">
-                                    <p class="priceSale">500.000d</p>
-                                    <p class="priceNews">400.000<sup>d</sup></p>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="dateNumber">5 ngay 4 dem</div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="divMeta">
-                            <div class="icTime divCountdown"></div>
-                        </div>
-                        <i class="icSale"></i>
-                    </div>
-                </div>
-                <!-- TODO more code here -->
+                <?php echo $product_special; ?>
 
                 <div class="clearfix"></div>
             </div>
@@ -200,13 +185,17 @@
                 <div class="marketing-text">
                     <div class="separator"></div>
                     <p class="name">Last year, 25 million Europeans chose a holiday home over a hotel room.</p>
-                    <p class="sumary">Enjoy the comforts of an affordable holiday home, with the peace of mind of booking through HouseTrip.</p>
+
+                    <p class="sumary">Enjoy the comforts of an affordable holiday home, with the peace of mind of
+                        booking through HouseTrip.</p>
+
                     <div class="separator"></div>
                 </div>
             </div>
             <div class="autoSizeImg1">
                 <div class="autoSizeImg1">
-                    <div class="divImgRemo" style="background:url(tripdeal/view/theme/default/image/issets/majorca.jpg) no-repeat -20px 0px">
+                    <div class="divImgRemo"
+                         style="background:url(tripdeal/view/theme/default/image/issets/majorca.jpg) no-repeat -20px 0px">
                         <a href="#">
                             <div class="overlay"></div>
                             <div class="property-name">Rome</div>
@@ -215,7 +204,8 @@
                     </div>
                 </div>
                 <div class="autoSizeImg2">
-                    <div class="divImgRemo" style="background:url(tripdeal/view/theme/default/image/issets/london.jpg) no-repeat -20px -40px">
+                    <div class="divImgRemo"
+                         style="background:url(tripdeal/view/theme/default/image/issets/london.jpg) no-repeat -20px -40px">
                         <a href="#">
                             <div class="overlay"></div>
                             <div class="property-name">Lodon</div>
@@ -224,7 +214,8 @@
                     </div>
                 </div>
                 <div class="autoSizeImg3">
-                    <div class="divImgRemo" style="background:url(tripdeal/view/theme/default/image/issets/paris.jpg) no-repeat -20px -200px">
+                    <div class="divImgRemo"
+                         style="background:url(tripdeal/view/theme/default/image/issets/paris.jpg) no-repeat -20px -200px">
                         <a href="#">
                             <div class="overlay"></div>
                             <div class="property-name">Paris</div>
@@ -233,7 +224,8 @@
                     </div>
                 </div>
                 <div class="autoSizeImg1">
-                    <div class="divImgRemo" style="background:url(tripdeal/view/theme/default/image/issets/majorca.jpg) no-repeat -20px 0px">
+                    <div class="divImgRemo"
+                         style="background:url(tripdeal/view/theme/default/image/issets/majorca.jpg) no-repeat -20px 0px">
                         <a href="#">
                             <div class="overlay"></div>
                             <div class="property-name">Rome ann</div>
@@ -242,7 +234,8 @@
                     </div>
                 </div>
                 <div class="autoSizeImg1">
-                    <div class="divImgRemo" style="background:url(tripdeal/view/theme/default/image/issets/majorca.jpg) no-repeat -20px -50px">
+                    <div class="divImgRemo"
+                         style="background:url(tripdeal/view/theme/default/image/issets/majorca.jpg) no-repeat -20px -50px">
                         <a href="#">
                             <div class="overlay"></div>
                             <div class="property-name">Rome</div>
@@ -258,7 +251,7 @@
 </div>
 <script type="text/javascript">
     var index = 0;
-    function getNewDeal(){
+    function getNewDeal() {
         //TODO: loading idicator here
         index++;
         $.ajax({
@@ -268,7 +261,7 @@
                 'index': index
             },
             dataType: "html",
-            success : function(result){
+            success: function (result) {
                 $('#moreNewDealDiv').append(result);
             }
         });

@@ -1,6 +1,6 @@
 <?php
 
-class ControllerCommonProductPortrait extends Controller
+class ControllerCommonProductFull extends Controller
 {
     public function index()
     {
@@ -19,14 +19,15 @@ class ControllerCommonProductPortrait extends Controller
         }
 
         $index = 0;
-        if (isset($_POST['index'])){
+        $typeRequest = 'full';
+        if (isset($_POST['index'])) {
             $index = $_POST['index'];
         }
-
-        $dataModel = $this->model_catalog_product->getNewProductListReceive('short', $index, $LIMIT);
+        $dataModel = $this->model_catalog_product->getNewProductListReceive($typeRequest, $index, $LIMIT);
         $this->data['dataModel'] = $dataModel;
 
         $this->response->setOutput($this->render());
     }
 }
+
 ?>
