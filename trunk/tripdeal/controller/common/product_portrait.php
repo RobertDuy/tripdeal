@@ -18,7 +18,12 @@ class ControllerCommonProductPortrait extends Controller
             $this->template = 'default/template/common/product_portrait.tpl';
         }
 
-        $dataModel = $this->model_catalog_product->getNewProductListReceive('short', 0, $LIMIT);
+        $index = 0;
+        if (isset($_POST['index'])){
+            $index = $_POST['index'];
+        }
+
+        $dataModel = $this->model_catalog_product->getNewProductListReceive('short', $index, $LIMIT);
         $this->data['dataModel'] = $dataModel;
 
         $this->response->setOutput($this->render());

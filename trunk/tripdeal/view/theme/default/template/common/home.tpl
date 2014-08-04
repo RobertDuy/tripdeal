@@ -188,7 +188,7 @@
                 <div class="clearfix"></div>
             </div>
             <div class="divCrlt">
-                <button type="button" class="button btColor" onclick="getNewDeal();">Xem them deal hot</button>
+                <button type="button" class="button btColor" onclick="getNewDeal()">Xem them deal hot</button>
             </div>
         </div>
     </div>
@@ -257,23 +257,21 @@
     </div>
 </div>
 <script type="text/javascript">
-    $(document).ready(function(){
-        var index = 0;
-
-        function getNewDeal(){
-            index++;
-            var data = new Array();
-            data['index'] = index;
-            $.ajax({
-                url: "/<?php echo DIR_ROOT_NAME ?>/?route=common/product_portrait",
-                type: "post",
-                data: data,
-                dataType: "json",
-                success : function(result){
-                    $('#moreNewDealDiv').html(result);
-                }
-            });
-        }
-    })
+    var index = 0;
+    function getNewDeal(){
+        //TODO: loading idicator here
+        index++;
+        $.ajax({
+            url: "/<?php echo DIR_ROOT_NAME ?>/?route=common/product_portrait",
+            type: "post",
+            data: {
+                'index': index
+            },
+            dataType: "html",
+            success : function(result){
+                $('#moreNewDealDiv').append(result);
+            }
+        });
+    }
 </script>
 <?php echo $footer; ?>
