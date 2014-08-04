@@ -105,12 +105,11 @@
         <div class="divContent">
             <p class="titleName">Deal moi nhan</p>
             <div class="divProduct">
-
-                <!-- PHP CODE LOAD DEAL MOI NHAN HERE-->
+                <?php foreach($dataModel as $product){ ?>
                 <div class="autoSizeProd">
                     <div class="itemProd">
                         <a href="/tripdeal/?route=travel/detail" class="imgProd">
-                            <img src="tripdeal/view/theme/default/image/issets/inboundTour.jpg">
+                            <img src="<?php echo $product['image']; ?>">
                             <div class="mask"></div>
                         </a>
                         <div class="desProd1">
@@ -132,11 +131,12 @@
                         <i class="icSale"></i>
                     </div>
                 </div>
-                <!-- TODO -->
+                <?}?>
                 <div class="clearfix"></div>
             </div>
+            <!-- TODO BREAK DOWN YOUR CONTROLLER TO IMPLEMENTS LOAD MORE CONTENT -->
             <div class="divCrlt">
-                <button type="button" class="button">Xem them deal moi</button>
+                <button type="button" class="button" onclick="getNewDeal();">Xem them deal moi</button>
             </div>
         </div>
     </div>
@@ -213,7 +213,7 @@
                 <div class="clearfix"></div>
             </div>
             <div class="divCrlt">
-                <button type="button" class="button btColor">Xem them deal hot</button>
+                <button type="button" class="button btColor" onclick="getNewDeal();">Xem them deal hot</button>
             </div>
         </div>
     </div>
@@ -281,4 +281,26 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var index = 0;
+        var limit = 8;
+
+        function getNewDeal(){
+            index++;
+            var data = new Array();
+            data['index'] = index;
+            data['limit'] = limit;
+            $.ajax({
+                url: "/form.php",
+                type: "post",
+                data: data,
+                dataType: "json",
+                success : function(result){
+                    $('#moreNewDealDiv').html(result);
+                }
+            });
+        }
+    })
+</script>
 <?php echo $footer; ?>
