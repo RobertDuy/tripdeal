@@ -255,7 +255,7 @@
         //TODO: loading idicator here
         index++;
         $.ajax({
-            url: "/<?php echo DIR_ROOT_NAME ?>/?route=common/product_portrait",
+            url: "/<?php echo DIR_ROOT_NAME ?>/?route=common/product_new_receive",
             type: "post",
             data: {
                 'index': index
