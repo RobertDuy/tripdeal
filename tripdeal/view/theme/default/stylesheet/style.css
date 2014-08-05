@@ -322,7 +322,7 @@ body{color:#333;line-height:1.6;font-size:13px;height:100%}
 .ui-icon-seek-start,.ui-icon-seek-first{background-position:-80px -160px}
 .ui-datepicker{z-index:1003 !important}
 
-.wrapTop{background:#fff;}
+.wrapTop{background:#F0F0F0;}
 .wrapTop .container{max-width:1150px;}
 .wrapTop .divTop{padding:5px 0px;position:relative}
 .wrapTop .divTop .divLanguage{float:right;padding-top:5px}
