@@ -4,14 +4,11 @@
 <div class="container">
 <div class="divCusotmized">
 <div class="title">Where do you want to go?</div>
+
 <ul class="js_cont_list">
-    <li><a href="#">ASIA</a></li>
-    <li><a href="#">AFRICA</a></li>
-    <li class="active"><a href="#">EUROPE</a></li>
-    <li><a href="#">NORTH AMERICA</a></li>
-    <li><a href="#">OCEANIA</a></li>
-    <li><a href="#">SOUTH AMERICA</a></li>
+    <?php echo $continent; ?>
 </ul>
+
 <div class="clearfix"></div>
 <div class="contentCustomized">
 <div class="akordeon" id="buttons">
@@ -30,47 +27,12 @@
                     <a href="#pprev" class="pprev"></a>
                     <a href="#pnext" class="pnext"></a>
                     <ul class="thumCity">
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png"><span>Austria</span></a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
-                        <li class="itemCity"><a href="#"><img src="tripdeal/view/theme/default/image/issets/at.png">Austria</a></li>
+                        <?php echo $country; ?>
                     </ul>
                 </div>
-                <div class="cityNumber">
-                    7 cities available for <strong>8</strong>
-                </div>
-                <ul class="liCiy">
-                    <li><a href="#">Cannes</a></li>
-                    <li><a href="#">Cannes</a></li>
-                    <li><a href="#">Cannes</a></li>
-                    <li><a href="#">Cannes</a></li>
-                    <li><a href="#">Cannes</a></li>
-                    <li><a href="#">Cannes</a></li>
-                    <li><a href="#">Cannes</a></li>
-                    <li><a href="#">Cannes</a></li>
-                    <div class="clearfix"></div>
-                </ul>
+                <?php echo $city; ?>
+
+                //TODO : write JQUERY FOR HANDLE CLICK SCRIPT
                 <div class="carousel_city">
                     <div class="divRoute">
                         <ul class="liCiyS">
@@ -449,8 +411,16 @@
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('#buttons').akordeon();
-        ;
+       $('#buttons').akordeon();
+
+        //INIT VARIABLE
+        function changeContinent(continent){
+            //LOAD COUNTRY
+        }
+
+        function changeCountry(country){
+            //LOAD COUNTRY
+        }
     });
 </script>
 <?php echo $footer; ?>
