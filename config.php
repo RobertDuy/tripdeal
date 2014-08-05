@@ -9,7 +9,7 @@ define('DIR_ROOT_NAME','openstore');
 define('ROOT_PATH', 'E:\xampp\htdocs/');
 define('PROJECT_PATH',ROOT_PATH.DIR_ROOT_NAME); 
 
-// DIR
+// DIRff
 define('DIR_APPLICATION', PROJECT_PATH.'/tripdeal/');
 define('DIR_SYSTEM', PROJECT_PATH.'/system/');
 define('DIR_DATABASE', PROJECT_PATH.'/system/database/');
