@@ -348,6 +348,7 @@
 </div>
 </div>
 </div>
+<div id="dialog-confirm"></div>
 <script type="text/javascript">
     $(document).ready(function () {
         $('#buttons').akordeon();
