@@ -27,3 +27,16 @@ function addCity(cityName, image) {
     }
     $('#lstCityDiv').append(html);
 }
+function changeCountry(countryName, DIR_ROOT_NAME){
+    $.ajax({
+        url: "/" + DIR_ROOT_NAME + "/?route=travel/custom/city",
+        type: "post",
+        data: {
+            'countryName': countryName
+        },
+        dataType: "html",
+        success: function (result) {
+            $('#loadCityDiv').html(result);
+        }
+    });
+}

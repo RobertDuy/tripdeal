@@ -30,8 +30,7 @@
                         <?php echo $country; ?>
                     </ul>
                 </div>
-                <?php echo $city; ?>
-
+                <div id="loadCityDiv"><?php echo $city; ?></div>
                 <div class="carousel_city">
                     <div class="divRoute">
                         <ul class="liCiyS" id="lstCityDiv"></ul>
@@ -352,15 +351,6 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('#buttons').akordeon();
-
-        //INIT VARIABLE
-        function changeContinent(continent){
-            //LOAD COUNTRY
-        }
-
-        function changeCountry(country){
-            //LOAD COUNTRY
-        }
     });
 </script>
 <?php echo $footer; ?>

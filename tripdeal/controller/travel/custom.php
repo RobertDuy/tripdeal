@@ -46,8 +46,8 @@
                 $this->template = 'default/template/travel/country.tpl';
             }
             $continentName = 'ASIA';  //default value
-            if(isset($this->request->get['continent'])){
-                $continentName = $this->request->get['continent'];
+            if(isset($_POST['continentName'])){
+                $continentName = $_POST['continentName'];
             }
 
             $countries = $this->model_catalog_country->getCountries($continentName);
@@ -66,8 +66,8 @@
             }
 
             $countryName = 'VIETNAM'; //default value
-            if(isset($this->request->get['country'])){
-                $countryName = $this->request->get['country'];
+            if(isset($_POST['countryName'])){
+                $countryName = $_POST['countryName'];
             }
 
             $cities = $this->model_catalog_country->getCities($countryName);
