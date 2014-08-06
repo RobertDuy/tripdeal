@@ -3,7 +3,7 @@
 </div>
 <ul class="liCiy">
     <?php foreach($cities as $city){ ?>
-    <li><a href="javascript:void(0);"><?php echo $city['cityName'] ?></a></li>
+    <li><a href="javascript:void(0);" onclick="addCity('<?php echo $city['cityName']?>', '<?php echo $city['image'] ?>' );"><?php echo $city['cityName'] ?></a></li>
     <?php } ?>
     <div class="clearfix"></div>
 </ul>

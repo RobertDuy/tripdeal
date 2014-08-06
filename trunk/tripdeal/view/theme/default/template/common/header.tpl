@@ -4,12 +4,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>TripHoBo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link href="tripdeal/view/theme/default/stylesheet/style.css" rel="stylesheet" media="screen">
-    <script src="tripdeal/view/javascript/jquery/jquery.js"></script>
-    <script src="tripdeal/view/javascript/jquery/jquery.easing.js"></script>
-    <script src="tripdeal/view/javascript/slider.js"></script>
-    <script src="tripdeal/view/javascript/jquery/jquery.wss.js"></script>
-    <script src="tripdeal/view/javascript/jquery/jquery.akordeon.js"></script>
+    <link href="<?php echo DIR_ROOT_NAME ?>/view/theme/default/stylesheet/style.css" rel="stylesheet" media="screen">
+    <script src="<?php echo DIR_ROOT_NAME ?>/view/javascript/jquery/jquery.js"></script>
+    <script src="<?php echo DIR_ROOT_NAME ?>/view/javascript/jquery/jquery.easing.js"></script>
+    <script src="<?php echo DIR_ROOT_NAME ?>/view/javascript/slider.js"></script>
+    <script src="<?php echo DIR_ROOT_NAME ?>/view/javascript/jquery/jquery.wss.js"></script>
+    <script src="<?php echo DIR_ROOT_NAME ?>/view/javascript/jquery/jquery.akordeon.js"></script>
+    <!-- LOGIC SCRIPT ---->
+    <script src="<?php echo DIR_ROOT_NAME ?>/view/javascript/logicfunction/tripdeal_function.js"></script>
+    <!-------------------->
 </head>
 <body>
 <!-- divTop -->
