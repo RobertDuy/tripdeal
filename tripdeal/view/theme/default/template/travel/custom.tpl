@@ -32,69 +32,9 @@
                 </div>
                 <?php echo $city; ?>
 
-                //TODO : write JQUERY FOR HANDLE CLICK SCRIPT
                 <div class="carousel_city">
                     <div class="divRoute">
-                        <ul class="liCiyS">
-                            <li>
-                                <div class="itemImg">
-                                    <a href="#" class="img"><img src="tripdeal/view/theme/default/image/issets/inboundTour1.jpg"></a>
-
-                                    <div class="name">Line 1</div>
-                                    <input type="hidden" value="1" name="city">
-                                </div>
-                                <span class="delete closeX">X</span>
-
-                                <div class="clearfix"></div>
-                            </li>
-                            <li>
-                                <div class="city_connector">
-                                    <div class="ways_to_travel">Travel Options</div>
-                                    <div class="number_of_routes">7</div>
-                                </div>
-                                <div class="itemImg">
-                                    <a href="#" class="img"><img src="tripdeal/view/theme/default/image/issets/inboundTour1.jpg"></a>
-
-                                    <div class="name">Line 2</div>
-                                    <input type="hidden" value="1" name="city">
-                                </div>
-                                <span class="delete closeX">X</span>
-
-                                <div class="clearfix"></div>
-
-                            </li>
-                            <li>
-                                <div class="city_connector">
-                                    <div class="ways_to_travel">Travel Options</div>
-                                    <div class="number_of_routes">7</div>
-                                </div>
-                                <div class="itemImg">
-                                    <a href="#" class="img"><img src="tripdeal/view/theme/default/image/issets/inboundTour.jpg"></a>
-
-                                    <div class="name">Line 3</div>
-                                    <input type="hidden" value="1" name="city">
-                                </div>
-                                <span class="delete closeX" data-id="2">X</span>
-
-                                <div class="clearfix"></div>
-
-                            </li>
-                            <li>
-                                <div class="city_connector">
-                                    <div class="ways_to_travel">Travel Options</div>
-                                    <div class="number_of_routes">7</div>
-                                </div>
-                                <div class="itemImg">
-                                    <a href="#" class="img"><img src="tripdeal/view/theme/default/image/issets/inboundTour1.jpg"></a>
-
-                                    <div class="name">Line 4</div>
-                                </div>
-                                <input type="hidden" value="1" name="city">
-                                <span class="delete closeX">X</span>
-
-                                <div class="clearfix"></div>
-                            </li>
-                        </ul>
+                        <ul class="liCiyS" id="lstCityDiv"></ul>
                     </div>
                 </div>
                 <div class="btn_wrapper">
@@ -411,7 +351,7 @@
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
-       $('#buttons').akordeon();
+        $('#buttons').akordeon();
 
         //INIT VARIABLE
         function changeContinent(continent){

@@ -14,6 +14,7 @@ class ModelCatalogCountry extends Model
                         "city" => array(
                             1 => array(
                                 "cityName" => "NHATRANG",
+                                "image" => "/". DIR_ROOT_NAME. "/image/ASIA/VIETNAM/nhatrang.png",
                                 "place" => array(
                                     1 => array(
                                         "placeName" => "Vinperland",
@@ -28,6 +29,7 @@ class ModelCatalogCountry extends Model
                             ),
                             2 => array(
                                 "cityName" => "PHANTHIET",
+                                "image" => "/". DIR_ROOT_NAME. "/image/ASIA/VIETNAM/phanthiet.png",
                                 "place" => array(
                                     1 => array(
                                         "placeName" => "MuiNe",
