@@ -119,78 +119,78 @@
                         </li>
                         <li>
                             <input id="Checkox2" type="checkbox" class="checkbox"/>
-                            <label id="Label2" for="CheckBox2" class="checkoff">Highlights</label>
+                            <label id="Label2" for="CheckBox2" class="checkoff">Adventure</label>
                         </li>
                         <li>
                             <input id="CheckBox3" type="checkbox" class="checkbox"/>
-                            <label id="Label3" for="CheckBox3" class="checkoff">Highlights</label>
+                            <label id="Label3" for="CheckBox3" class="checkoff">Luxury</label>
                         </li>
                         <li>
                             <input id="CheckBox4" type="checkbox" class="checkbox"/>
-                            <label id="Label4" for="CheckBox4" class="checkoff">Highlights</label>
+                            <label id="Label4" for="CheckBox4" class="checkoff">Cruises</label>
                         </li>
                         <li>
                             <input id="CheckBox5" type="checkbox" class="checkbox"/>
-                            <label id="Label5" for="CheckBox5" class="checkoff">Highlights</label>
+                            <label id="Label5" for="CheckBox5" class="checkoff">Beaches</label>
                         </li>
                         <li>
                             <input id="CheckBox6" type="checkbox" class="checkbox"/>
-                            <label id="Label6" for="CheckBox6" class="checkoff">Highlights</label>
+                            <label id="Label6" for="CheckBox6" class="checkoff">Responsible travel</label>
                         </li>
                         <li>
                             <input id="CheckBox7" type="checkbox" class="checkbox"/>
-                            <label id="Label7" for="CheckBox7" class="checkoff">Highlights</label>
+                            <label id="Label7" for="CheckBox7" class="checkoff">Honeymoon</label>
                         </li>
                         <li>
                             <input id="CheckBox8" type="checkbox" class="checkbox"/>
-                            <label id="Label8" for="CheckBox8" class="checkoff">Highlights</label>
+                            <label id="Label8" for="CheckBox8" class="checkoff">Short Breaks</label>
                         </li>
                         <li>
                             <input id="CheckBox9" type="checkbox" class="checkbox"/>
-                            <label id="Label9" for="CheckBox9" class="checkoff">Highlights</label>
+                            <label id="Label9" for="CheckBox9" class="checkoff">Multi Country</label>
                         </li>
                         <li>
                             <input id="CheckBox10" type="checkbox" class="checkbox"/>
-                            <label id="Label10" for="CheckBox10" class="checkoff">Highlights</label>
+                            <label id="Label10" for="CheckBox10" class="checkoff">Day Trips</label>
                         </li>
                         <li>
                             <input id="CheckBox11" type="checkbox" class="checkbox"/>
-                            <label id="Label11" for="CheckBox11" class="checkoff">Highlights</label>
+                            <label id="Label11" for="CheckBox11" class="checkoff">Accommodation only</label>
                         </li>
                         <li>
                             <input id="CheckBox12" type="checkbox" checked class="checkbox"/>
-                            <label id="Label12" for="CheckBox12" class="checkoff">Highlights</label>
+                            <label id="Label12" for="CheckBox12" class="checkoff">Transfer only</label>
                         </li>
                         <li>
                             <input id="CheckBox13" type="checkbox" class="checkbox"/>
-                            <label id="Label13" for="CheckBox13" class="checkoff">Highlights</label>
+                            <label id="Label13" for="CheckBox13" class="checkoff">Others</label>
                         </li>
                         <li class="col2Chek">
                             <input type="text" class="textbox" style="width:80%"/>
                         </li>
                         <div class="clearfix"></div>
                     </ul>
-                    <p class="titleP">Which travel style suits you best?*</p>
+                    <p class="titleP">What type of accommodation would you like?*</p>
                     <ul class="liCheck">
                         <li>
                             <input id="CheckBox1" type="checkbox" checked class="checkbox"/>
-                            <label id="Label1" for="CheckBox1" class="checkoff">Highlights</label>
+                            <label id="Label1" for="CheckBox1" class="checkoff">3 stars</label>
                         </li>
                         <li>
                             <input id="Checkox2" type="checkbox" class="checkbox"/>
-                            <label id="Label2" for="CheckBox2" class="checkoff">Highlights</label>
+                            <label id="Label2" for="CheckBox2" class="checkoff">4 stars</label>
                         </li>
                         <li>
                             <input id="CheckBox3" type="checkbox" class="checkbox"/>
-                            <label id="Label3" for="CheckBox3" class="checkoff">Highlights</label>
+                            <label id="Label3" for="CheckBox3" class="checkoff">5 stars resort</label>
                         </li>
                         <li>
                             <input id="CheckBox4" type="checkbox" class="checkbox"/>
-                            <label id="Label4" for="CheckBox4" class="checkoff">Highlights</label>
+                            <label id="Label4" for="CheckBox4" class="checkoff">Boutique (3 - 4 stars)</label>
                         </li>
                         <li>
                             <input id="CheckBox5" type="checkbox" class="checkbox"/>
-                            <label id="Label5" for="CheckBox5" class="checkoff">Highlights</label>
+                            <label id="Label5" for="CheckBox5" class="checkoff">Not required</label>
                         </li>
                         <div class="clearfix"></div>
                     </ul>
