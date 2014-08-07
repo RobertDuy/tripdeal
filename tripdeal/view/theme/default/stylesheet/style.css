@@ -657,8 +657,8 @@ ul.sliders-wrap-inner li img{padding:0px;}
 .contentCustomized{display:block;margin:30px 0px 30px}
 .divCountry{display:block;padding:5px 30px;overflow:hidden;border:1px solid #fca9a1;border-left:none;border-right:none;position:relative}
 .divCountry .pprev, .divCountry .pnext{position:absolute;width:30px;height:30px;top:50%;margin-top:-15px;}
-.divCountry .pprev { background:url(../image/issets/arrow-l.png) no-repeat center center;left:0px}
-.divCountry .pnext { background:url(../image/issets/arrow-r.png) no-repeat center center;right:0px}
+.divCountry .pprev { background:url(../image/issets/country-slider-arrow.png) no-repeat 6px 7px;left:0px}
+.divCountry .pnext { background:url(../image/issets/country-slider-arrow.png) no-repeat -14px 7px;right:0px}
 .divCountry > ul{display:block;margin:0px;padding:6px 0px 0px;height:35px;overflow:hidden;}
 .divCountry > ul li{float:left;margin:0px 10px 0px 0px;height:30px;}
 .divCountry > ul li.active a{color:#549a01}
