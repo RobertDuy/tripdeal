@@ -545,6 +545,8 @@ class ControllerCatalogProduct extends Controller {
 		$this->data['entry_meta_description'] = $this->language->get('entry_meta_description');
 		$this->data['entry_meta_keyword'] = $this->language->get('entry_meta_keyword');
 		$this->data['entry_description'] = $this->language->get('entry_description');
+                $this->data['entry_itinerary'] = $this->language->get('entry_itinerary');
+                $this->data['entry_term_condition'] = $this->language->get('entry_term_condition');
 		$this->data['entry_store'] = $this->language->get('entry_store');
 		$this->data['entry_keyword'] = $this->language->get('entry_keyword');
 		$this->data['entry_model'] = $this->language->get('entry_model');
@@ -657,7 +659,20 @@ class ControllerCatalogProduct extends Controller {
 			$this->data['error_description'] = $this->error['description'];
 		} else {
 			$this->data['error_description'] = array();
-		}	
+		}
+                
+                // Phuongnn add
+                if (isset($this->error['itinerary'])) {
+			$this->data['error_itinerary'] = $this->error['itinerary'];
+		} else {
+			$this->data['error_itinerary'] = array();
+		}
+                
+                if (isset($this->error['term_condition'])) {
+			$this->data['error_term_condition'] = $this->error['term_condition'];
+		} else {
+			$this->data['error_term_condition'] = array();
+		}
 
 		if (isset($this->error['model'])) {
 			$this->data['error_model'] = $this->error['model'];
