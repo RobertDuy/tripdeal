@@ -335,15 +335,15 @@ body{color:#333;line-height:1.6;font-size:13px;height:100%}
 
 /* MENU */
 .divMenuFillter-fixed{position:fixed;top:0;z-index:39;}
-.wrapMenu{background:#246bab}
+.wrapMenu{background:#007964}
 .wrapMenu .container{max-width:1150px;}
-.wrapMenu .divMenu{position:relative;background:#246bab;padding:5px 0px 0px}
+.wrapMenu .divMenu{position:relative;background:#007964;padding:5px 0px 0px}
 .divMenu .logo{width:100px;float:left}
 .divMenu .logo img{max-width:100%;}
 .divMenu .ulMenu{display:block;float:left;font-size:15px;padding:4px 0px 0px 30px}
 .divMenu .ulMenu li{float:left;padding:0px;list-style:none}
 .divMenu .ulMenu li a{padding:5px 20px;display:block;color:#fff;font-weight:bold;font-family:Tahoma;}
-.divMenu .ulMenu li a:hover{ background:#145b9a}
+.divMenu .ulMenu li a:hover{ background:#00aa8f;}
 
 /* SLIDE */
 .wrapSilde{display:block;max-width:1349px;margin:0px auto;min-width:980px;padding:0px;position:relative}
@@ -379,7 +379,7 @@ body{color:#333;line-height:1.6;font-size:13px;height:100%}
 
 /* SEARCH */
 .wrapSearch{margin-top:-43px;position:relative; z-index:12}
-.searchBox{background:#EBEBEB;padding:10px;float:right}
+.searchBox{background:#f0f0f0;padding:10px;float:right}
 .searchBox .form_controls{float:left;padding:5px 10px}
 .searchBox .form_controls label{font-weight:bold;display:block;font-size:11px;margin-bottom:5px;color:#333333;}
 .searchBox .form_controls .textbox{padding:6px 6px 7px}
@@ -430,7 +430,7 @@ body{color:#333;line-height:1.6;font-size:13px;height:100%}
 .itemProd .desProd1{position:relative;background:#edf4fa;padding:10px}
 .itemProd .desProd2{position:relative;background:#faefd3;padding:10px}
 .itemProd .name{font-size:16px;font-weight:bold;color:#236baa;display:block;min-height:30px;overflow:hidden}
-.itemProd .name a{display:table-cell;width:100%;height:100%;vertical-align:middle;color:#236baa;}
+.itemProd .name a{display:table-cell;width:100%;height:100%;vertical-align:middle;color:#007964;}
 .itemProd .name a:hover{color:#ff8632}
 .itemProd .dateNumber{float:right;margin:5px 10px 0px 0px}
 .divPriceInfo{float:left;}
@@ -488,7 +488,7 @@ body{color:#333;line-height:1.6;font-size:13px;height:100%}
 .divGroupImg .autoSizeImg1 .autoSizeImg3 .divImgRemo {height:300px}
 
 /* FOOTER */
-.wrapFooter{position:relative;background:#4d89be;padding:15px 0px;min-width:980px}
+.wrapFooter{position:relative;background:#007964;padding:15px 0px;min-width:980px;}
 .wrapFooter .divFooter{position:relative;margin:0px -15px;color:#fff}
 .wrapFooter .divFooter > a{color:#fff}
 .divFooter .autoSizeFooter{width:auto;padding:15px;float:left}
@@ -625,7 +625,7 @@ ul.sliders-wrap-inner li img{padding:0px;}
 /* CUSTOMIZED */
 .wrapCusotmized{position:relative;margin-top:0px;min-width:980px}
 .divCusotmized{position:relative;}
-.divCusotmized .title{margin:70px auto 30px;line-height:65px; text-align:center;font-size:65px;line-height:65px;color:#1e5193;font-family:"Times New Roman", Times, serif}
+.divCusotmized .title{margin:70px auto 30px;line-height:65px; text-align:center;font-size:65px;line-height:65px;color:#007964;font-family:"Times New Roman", Times, serif;}
 
 .js_cont_list{display:block;margin:0px;padding:0px;list-style:none; text-align:center}
 .js_cont_list li{display:inline-block;list-style:none;padding:8px;font-size:16px;line-height:21px;min-height:150px}
@@ -640,7 +640,7 @@ ul.sliders-wrap-inner li img{padding:0px;}
 .akordeon-item .akordeon-item-body{background:#fff;border-bottom:none;display:none; height:auto !important}
 .akordeon-icon{width:16px;height:16px;padding:0;margin:0;cursor:pointer;behavior:url(PIE.htc);position:absolute;right:10px;top:5px;}
 .akordeon-heading{float:left;padding:0px 0px 0px 10px;}
-.akordeon-heading i{display:inline-block;margin-right:10px;width:25px;height:25px;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;background:#1e5193;behavior:url(PIE.htc);color:#fff;vertical-align:middle;font-style:normal;line-height:25px;text-align:center;font-size:13px;} 
+.akordeon-heading i{display:inline-block;margin-right:10px;width:25px;height:25px;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;background:#007964;behavior:url(PIE.htc);color:#fff;vertical-align:middle;font-style:normal;line-height:25px;text-align:center;font-size:13px;} 
 .akordeon-icon span{color:#666;font-size:24px;position:absolute;left:6px;top:-12px;font-weight:bold;text-align:center;}
 .akordeon-item.expanded i{ background:#fff;color:#333}
 .akordeon-item.expanded .akordeon-icon span{color:#fff;}
