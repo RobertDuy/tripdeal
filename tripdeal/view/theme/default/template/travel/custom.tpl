@@ -12,7 +12,8 @@
 <div class="clearfix"></div>
 <div class="contentCustomized">
 <div class="akordeon" id="buttons">
-<div class="akordeon-item expanded">
+
+<div class="akordeon-item expanded" id="step1">
     <div class="akordeon-item-head">
         <div class="akordeon-item-head-container">
             <div class="akordeon-heading">
@@ -37,13 +38,13 @@
                     </div>
                 </div>
                 <div class="btn_wrapper">
-                    <button class="button"><span>Proceed</span></button>
+                    <a class="button" href="javascript:void(0);" onclick="return gotoStep(2);"><span>Proceed</span></a>
                 </div>
             </form>
         </div>
     </div>
 </div>
-<div class="akordeon-item">
+<div class="akordeon-item" id="step2">
     <div class="akordeon-item-head">
         <div class="akordeon-item-head-container">
             <div class="akordeon-heading">
@@ -56,16 +57,7 @@
             <div class="akordeon-item-content jsiselect_date">
                 <label class="lbel">Cities you have selected</label>
 
-                <div class="tabSpan">
-                    <a href="#">lineCannes</a>
-                    <a href="#">lineLille</a>
-                    <a href="#">lineLyon</a>
-                    <a href="#">lineNice</a>
-                    <a href="#">lineParis</a>
-                    <a href="#">lineStrasbourg</a>
-                    <a href="#">lineToulouse</a>
-                    <a href="#">lineStrasbourg</a>
-                </div>
+                <div class="tabSpan" id="step2ListCityDiv"></div>
                 <div class="clearfix"></div>
                 <div class="period_wrapper">
                     <div class="journey_period">
@@ -90,16 +82,16 @@
                     </div>
                     <div class="trip_title">
                         <label class="lbel">Give a name to your Trip</label>
-                        <input type="text" class="textbox" value="" placeholder="Trip on...">
+                        <input id="tripCustomName" type="text" class="textbox" value="" placeholder="Trip on...">
                     </div>
-                    <button type="button" class="button"><span>Proceed</span></button>
+                    <a href="javascript:void(0);" class="button" onclick="gotoStep(3)"><span>Proceed</span></a>
                     <div class="clearfix"></div>
                 </div>
             </div>
         </form>
     </div>
 </div>
-<div class="akordeon-item">
+<div class="akordeon-item" id="step3">
     <div class="akordeon-item-head">
         <div class="akordeon-item-head-container">
             <div class="akordeon-heading">
@@ -195,14 +187,14 @@
                         <div class="clearfix"></div>
                     </ul>
                     <div class="btn_wrapper">
-                        <button class="button"><span>Proceed</span></button>
+                        <a href="javascript:void(0);" class="button" onclick="gotoStep(4)"><span>Proceed</span></a>
                     </div>
                 </div>
             </form>
         </div>
     </div>
 </div>
-<div class="akordeon-item">
+<div class="akordeon-item" id="step4">
     <div class="akordeon-item-head">
         <div class="akordeon-item-head-container">
             <div class="akordeon-heading">
@@ -290,13 +282,13 @@
                     </ul>
                 </div>
                 <div class="btn_wrapper">
-                    <button class="button"><span>Proceed</span></button>
+                    <a href="javascript:void(0);" class="button" onclick="gotoStep(5)"><span>Proceed</span></a>
                 </div>
             </form>
         </div>
     </div>
 </div>
-<div class="akordeon-item">
+<div class="akordeon-item" id="step5">
     <div class="akordeon-item-head">
         <div class="akordeon-item-head-container">
             <div class="akordeon-heading">
