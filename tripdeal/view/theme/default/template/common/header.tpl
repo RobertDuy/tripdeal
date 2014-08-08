@@ -37,7 +37,7 @@
 <div class="wrapMenu divMenuFillter">
     <div class="container">
         <div class="divMenu">
-            <a  class="logo" href="#"><img src="tripdeal/view/theme/default/image/issets/logo.png" alt="logo"> </a>
+            <a  class="logo" href="#"><img src="<?php echo DIR_ROOT_NAME ?>/view/theme/default/image/issets/logo.png" alt="logo"> </a>
             <ul class="ulMenu">
                 <li><a class="active" href="/<?php echo DIR_ROOT_NAME ?>">Trang chủ</a></li>
                 <li><a href="/<?php echo DIR_ROOT_NAME ?>/?route=travel/full">Deal du lịch</a></li>
