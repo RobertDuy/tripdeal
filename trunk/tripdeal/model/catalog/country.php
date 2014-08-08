@@ -45,6 +45,7 @@ class ModelCatalogCountry extends Model
                         "city" => array(
                             1 => array(
                                 "cityName" => "BACKINH",
+                                "image" => "/". DIR_ROOT_NAME. "/image/ASIA/CHINA/backinh.png",
                                 "place" => array(
                                     1=> array(
                                         "placeName" => "VAN LY TRUONG THANH",
@@ -59,6 +60,7 @@ class ModelCatalogCountry extends Model
                             ),
                             2 => array(
                                 "cityName" => "SANGHAI",
+                                "image" => "/". DIR_ROOT_NAME. "/image/ASIA/CHINA/sanghai.png",
                                 "place" => array(
                                     1 => array(
                                         "placeName" => "SANGHAICITY",
@@ -74,6 +76,7 @@ class ModelCatalogCountry extends Model
                         "city" => array(
                             1 => array(
                                 "cityName" => "Bangkok",
+                                "image" => "/". DIR_ROOT_NAME. "/image/ASIA/THAILAND/bangkok.png",
                                 "place" => array(
                                     1=> array(
                                         "placeName" => "Bangkok city",
@@ -90,13 +93,13 @@ class ModelCatalogCountry extends Model
                         "city" => array(
                             1 => array(
                                 "cityName" => "singapore",
+                                "image" => "/". DIR_ROOT_NAME. "/image/ASIA/SINGAPORE/singapore_city.png",
                                 "place" => array(
                                     1=> array(
                                         "placeName" => "tower",
                                         "image" => "/". DIR_ROOT_NAME."/image/ASIA/SINGAPORE/tower.png"
                                     )
                                 )
-
                             )
                         )
                     )

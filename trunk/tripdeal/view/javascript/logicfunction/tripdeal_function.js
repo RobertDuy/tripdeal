@@ -54,7 +54,11 @@ var mapUserCustomTourInfo = new HasMap();
 
 var step1ChooseLocation = new HasMap();
 var step2ChooseDate = new Array();
-var step3ChooseStyleTravel = new Array();
+
+var step3ChooseStyleTravel = new HasMap();
+var step3SuiteTravel = new Array();
+var step3Accommodation = new Array();
+
 var step4BookHotel = new Array();
 
 var STEP = {
@@ -169,12 +173,33 @@ function checkStep(stepNumber) {
     return true;
 }
 
-function gotoStep(stepNumber) {
-    if (stepNumber == 2) {
+function step3HandleCheckbox(id, value) {
+    var index = id.indexOf('_');
+    if ($('#' + id).prop('checked')) {
+        if (id.indexOf('suite') > 0) {
+            if (value == 'Others') {
+                step3SuiteTravel[parseInt(id.substring(0, index), 10)] = $('#otherSuite').val().trim();
+            } else {
+                step3SuiteTravel[parseInt(id.substring(0, index), 10)] = value;
+            }
+        } else if (id.indexOf('acc')) {
+            step3Accommodation[parseInt(id.substring(0, index), 10)] = value;
+        }
+    } else {
+        if (id.indexOf('suite') > 0) {
+            step3SuiteTravel[parseInt(id.substring(0, index), 10)] = '';
+        } else if (id.indexOf('acc')) {
+            step3Accommodation[parseInt(id.substring(0, index), 10)] = '';
+        }
+    }
+}
+
+function gotoStep(gotoStepNumber) {
+    if (gotoStepNumber == 2) {
         //finish step 1
         mapUserCustomTourInfo.put(STEP.step1, step1ChooseLocation);
         //check step 1
-        if (!checkStep(stepNumber)) return;
+        if (!checkStep(gotoStepNumber)) return;
 
         var html = '';
         $('#step2ListCityDiv').html('');
@@ -183,7 +208,7 @@ function gotoStep(stepNumber) {
             html += '<a href="#">' + lstCities[i] + '</a>'
         }
         $('#step2ListCityDiv').append(html);
-    } else if (stepNumber == 3) {
+    } else if (gotoStepNumber == 3) {
         //get value ---------------------
         var isCutStep1 = false;
         var isCutStep2 = false;
@@ -213,22 +238,47 @@ function gotoStep(stepNumber) {
             }
         }
 
-        mapUserCustomTourInfo.put(STEP.step2, step2ChooseDate);
-        if (!checkStep(stepNumber)) return;
+        $('#otherSuite').bind('keypress', function (e) {
+            var code = e.keyCode || e.which;
+            if (code == 13) { // press Enter
+                $('#11_suite').attr('checked', true);
+                step3SuiteTravel[11] = $('#otherSuite').val().trim();
+            }
+        });
 
-    } else if (stepNumber == 4) {
+        mapUserCustomTourInfo.put(STEP.step2, step2ChooseDate);
+        if (!checkStep(gotoStepNumber)) return;
+
+    } else if (gotoStepNumber == 4) {
+        step3ChooseStyleTravel.put('suite', step3SuiteTravel);
+        step3ChooseStyleTravel.put('acc', step3Accommodation);
         mapUserCustomTourInfo.put(STEP.step3, step3ChooseStyleTravel);
 
-        if (!checkStep(stepNumber)) return;
+        if (!checkStep(gotoStepNumber)) return;
 
-    } else if (stepNumber == 5) {
+    } else if (gotoStepNumber == 5) {
         mapUserCustomTourInfo.put(STEP.step4, step4BookHotel);
 
-        if (!checkStep(stepNumber)) return;
+        if (!checkStep(gotoStepNumber)) return;
     }
 
     //TODO : add animation -----------
-    $('#step' + (stepNumber - 1)).removeClass('expanded');
-    $('#step' + stepNumber).addClass('expanded');
+    $('#step' + (gotoStepNumber - 1)).removeClass('expanded');
+    $('#step' + gotoStepNumber).addClass('expanded');
     return true;
+}
+
+function submitCustomInfo(DIR_ROOT_NAME) {
+    $.ajax({
+        url: "/" + DIR_ROOT_NAME + "/?route=travel/custom/submit",
+        type: "post",
+        data: {
+            'userEmail': $('#userEmail').val().trim(),
+            'userData': mapUserCustomTourInfo
+        },
+        dataType: "html",
+        success: function (result) {
+            alert('Thank you, we will contact you soon');
+        }
+    });
 }
