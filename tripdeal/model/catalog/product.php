@@ -13,5 +13,15 @@ class ModelCatalogProduct extends Model{
         }
         return $query->rows;
     }
+    
+    public function getDetailProduct($prdId){
+        $query = $this->db->query("SELECT * FROM" . DB_PREFIX . " product p, product_description pd where p.product_id = pd.product_id AND p.product_id = $prdId");
+        return $query->rows;
+    }
+    
+    public function getProductImage($prdId){
+        $query = $this->db->query("SELECT * FROM" . DB_PREFIX . " product p, product_image pi where p.product_id = pi.product_id AND p.product_id = $prdId");
+        return $query->rows;
+    }
 }
 ?>

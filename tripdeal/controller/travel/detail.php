@@ -16,6 +16,20 @@
                 'common/footer'
             );
 
+            $this->load->model('catalog/product');
+            
+            if (isset($_GET['product_id'])) {
+                    $product_id = $this->request->get['product_id'];
+            } else {
+                    $product_id = 35;
+            }
+
+            $dataModel = $this->model_catalog_product->getDetailProduct($product_id);
+            $this->data['dataModel'] = $dataModel;
+
+            $dataImage = $this->model_catalog_product->getProductImage($product_id);
+            $this->data['dataImage'] = $dataImage;
+
             $this->response->setOutput($this->render());
         }
     }

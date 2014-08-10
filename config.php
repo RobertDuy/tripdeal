@@ -5,6 +5,7 @@ define('HTTP_SERVER', 'http://localhost/openstore/');
 // HTTPS
 define('HTTPS_SERVER', 'http://localhost/openstore/');
 
+define('IMAGE_BASE','image/');
 define('DIR_ROOT_NAME','openstore');
 define('ROOT_PATH', 'E:\xampp\htdocs/');
 define('PROJECT_PATH',ROOT_PATH.DIR_ROOT_NAME); 
