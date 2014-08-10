@@ -1,7 +1,7 @@
 <?php foreach($dataModel as $product){ ?>
     <div class="autoSizeProd">
         <div class="itemProd">
-            <a href="/<?php echo DIR_ROOT_NAME?>/?route=travel/detail" class="imgProd">
+            <a href="/<?php echo DIR_ROOT_NAME?>/?route=travel/detail/&product_id=<?php echo $product['product_id'] ?>" class="imgProd">
                 <img src="<?php echo $product['image']; ?>">
                 <div class="mask"></div>
             </a>

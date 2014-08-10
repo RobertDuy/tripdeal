@@ -6,22 +6,18 @@
             <div class="preload"><div></div></div>
             <div class="main-slider-content">
                 <ul class="sliders-wrap-inner">
-                    <li><img src="tripdeal/view/theme/default/image/issets/prod1.jpg"></li>
-                    <li><img src="tripdeal/view/theme/default/image/issets/prod2.jpg"></li>
-                    <li><img src="tripdeal/view/theme/default/image/issets/prod3.jpg"></li>
-                    <li><img src="tripdeal/view/theme/default/image/issets/prod4.jpg"></li>
-                    <li><img src="tripdeal/view/theme/default/image/issets/prod5.jpg"></li>
+                    <?php foreach($dataImage as $prdImage){ ?>
+                        <li><img src="<?php echo IMAGE_BASE.$prdImage['image']; ?> "></li>
+                    <?php } ?>
                 </ul>
             </div>
             <div class="navigator-content">
                 <div class="button-next">Next</div>
                 <div class="navigator-wrapper">
                     <ul class="navigator-wrap-inner">
-                        <li><img src="tripdeal/view/theme/default/image/issets/prod1.jpg"></li>
-                        <li><img src="tripdeal/view/theme/default/image/issets/prod2.jpg"></li>
-                        <li><img src="tripdeal/view/theme/default/image/issets/prod3.jpg"></li>
-                        <li><img src="tripdeal/view/theme/default/image/issets/prod4.jpg"></li>
-                        <li><img src="tripdeal/view/theme/default/image/issets/prod5.jpg"></li>
+                        <?php foreach($dataImage as $prdImage){ ?>
+                        <li><img src="<?php echo IMAGE_BASE.$prdImage['image']; ?> "></li>
+                        <?php } ?>
                     </ul>
                 </div>
                 <div  class="button-previous">Previous</div>
@@ -69,46 +65,18 @@
             <div class="divColumnL">
                 <div class="divTab">
                     <ul class="nav nav-tabs" id="myTab">
-                        <li class="active"><i></i><a href="#detailPt">Tour overview</a></li>
-                        <li><i></i><a href="#adtab">Itinerary</a></li>
-                        <li><i></i><a href="#cusTab">Term and conditions</a></li>
+                        <li class="active"><i></i><a href="#descriptionTab">Tour overview</a></li>
+                        <li><i></i><a href="#itineraryTab">Itinerary</a></li>
+                        <li><i></i><a href="#termTab">Term and conditions</a></li>
                     </ul>
-                    <div class="tab-pane active" id="detailPt">
-                        <strong>Thông tin chi tiết</strong><br><br>
-
-                        Người ta thường ví đá tượng trưng cho những gì cứng rắn và thô ráp, nước tượng trưng cho sự mềm mại, yên bình. Nhưng ở Rock Water Bay Beach Resort & Spa, những phiến đá khô khan bên dòng nước êm dịu tạo thành một kiệt tác của thiên nhiên. Hãy cùng Hotdeal đến với Rock Water Bay Beach Resort & Spa để cùng chiêm ngưỡng vẻ đẹp và thần thái ở nơi được người ta dành cho một cái tên rất thú vị và độc đáo: Vịnh Đá Nhảy. Chỉ với voucher 1.385.000 đồng từ Hotdeal, bạn có dịp tận hưởng gói dịch vụ nghỉ dưỡng 02 ngày 01 đêm + ăn sáng, ăn tối + 2 suất tắm bùn dành cho 02 người, áp dụng loại phòng Deluxe Ocean View Villa tại Rock Water Bay Beach Resort & Spa.
-                        <br>
-                        Rock Water Bay Beach Resort & Spa 2N1Đ + Ăn Tối + 2 Suất Tắm Bùn
-                        <br>
-                        Rock Water Bay Beach Resort & Spa 2N1Đ + Ăn Tối + 2 Suất Tắm Bùn
-                        <br>
-                        Nằm ẩn mình trên mũi điện Kê Gà, Rock Water Bay Beach Resort & Spa tạo ấn tượng đặc biệt cho du khách bởi kiến trúc giật tầng bậc thang, uốn lượn với độ cao thấp khác nhau. Tất cả các phòng đều có góc nhìn thông thoáng hướng ra biển cả mênh mông. Lối kiến trúc này tạo nên một vẻ đẹp rất riêng cho không gian sống của toàn bộ khu resort, hài hòa với cảnh quan xung quanh và tận dụng được tối đa các yếu tố tự nhiên.
-                        <br>
-                        Rock Water Bay Beach Resort & Spa 2N1Đ + Ăn Tối + 2 Suất Tắm Bùn
-                        <br>
-                        Nét độc đáo, nổi bật của Rock Water Bay mà người ta thường kháo nhau đó chính là cụm hồ bơi nước mặn được làm bằng vật liệu đá hoa cương lát sỏi tuyệt đẹp với nhiều hồ lớn nhỏ liền kề nhau giữa một vịnh biển với những phiến đá đủ hình hài càng làm tăng thêm nét mộc của Resort, thể hiện sự công hưởng nhịp nhàng giữa kiệt tác thiên nhiên và bàn tay con người sáng tạo. Bạn sẽ có cảm nhận thú vị như đang ngụp lặn giữa biển khơi mênh mông.
-                        <br>
-                        Rock Water Bay Beach Resort & Spa 2N1Đ + Ăn Tối + 2 Suất Tắm Bùn
-                        <br>
-                        Rock Water Bay Resort được xây dựng theo tiêu chuẩn 3 sao + với đầy đủ những dịch vụ và tiện nghi đáp ứng được mọi nhu cầu của du khách. Resort tọa lạc trên một bờ biển xanh mát rộng hơn 4 ha với 86 villa, có lối kiến trúc hiện đại. Tất cả các phòng điều hướng ra bờ biển với bãi cát vàng trải dài bất tận.
-                        <br>
-                        Rock Water Bay Beach Resort & Spa 2N1Đ + Ăn Tối + 2 Suất Tắm Bùn
-                        <br>
-                        Với voucher của Hotdeal, bạn sẽ được nghỉ ngơi 2 ngày 1 đêm tại resort với loại phòng Deluxe Ocean View Villa. Phòng được thiết kế theo các cụm 4-7 phòng, giật tầng theo dạng bậc thang. Không gian rộng rãi, thoáng mát với diện tích 30m2 và ban công hướng ra biển. Các trang thiết bị trong phòng đều cao cấp, tiện nghi, đáp ứng tiêu chuẩn 3 sao + với đầy đủ mini bar, điện thoại quốc tế, đường truyền internet, két sắt, dép, áo choàng tắm, máy sấy…
-                        <br>
-                        Rock Water Bay Beach Resort & Spa 2N1Đ + Ăn Tối + 2 Suất Tắm Bùn
-                        <br>
-                        Rock Water Bay Beach Resort & Spa 2N1Đ + Ăn Tối + 2 Suất Tắm Bùn
-                        <br>
-                        Từ phòng của mình, bạn có thể phóng tầm nhìn ra xa xa để ngắm nhìn những tảng đá nhấp nhô trên bãi biển, kéo dài hàng trăm mét tạo nên một bức tranh thiên nhiên vô cùng độc đáo và những con sóng bạc đầu vỗ về nhau. Và có đôi khi, lắng lòng mình trước trùng khơi, bạn sẽ cảm nhận đầy đủ hơn ý tứ trong ca từ của người nhạc sĩ tài hoa họ Trịnh: “Ngày sau sỏi đá cũng cần có nhau”. Ở Rock Water Bay, sỏi đá nương tựa vào nhau và tâm hồn con người cũng nhẹ nhàng, bình thản và thăng hoa cảm xúc. Thật tuyệt vời phải không nào! Voucher còn đi kèm 1 bữa ăn sáng và 1 bữa ăn tối dành cho 2 người tại Nhà hàng của Resort.
-                        <br>
-                        Rock Water Bay Beach Resort & Spa 2N1Đ + Ăn Tối + 2 Suất Tắm Bùn
+                    <div class="tab-pane active" id="descriptionTab">
+                        <?php echo htmlspecialchars_decode($dataModel[0]['description']); ?>
                     </div>
-                    <div class="tab-pane" id="adtab">
-                        địa điểm
+                    <div class="tab-pane" id="itineraryTab">
+                        <?php echo htmlspecialchars_decode($dataModel[0]['itinerary']); ?>
                     </div>
-                    <div class="tab-pane" id="cusTab">
-                        đối tác
+                    <div class="tab-pane" id="termTab">
+                        <?php echo htmlspecialchars_decode($dataModel[0]['term_condition']); ?>
                     </div>
                 </div>
             </div>
@@ -241,4 +209,5 @@
         window.location.assign("/openstore/?route=travel/full");
     }
 </script>
+
 <?php echo $footer; ?>
