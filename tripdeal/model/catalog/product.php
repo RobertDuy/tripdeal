@@ -23,5 +23,20 @@ class ModelCatalogProduct extends Model{
         $query = $this->db->query("SELECT * FROM" . DB_PREFIX . " product p, product_image pi where p.product_id = pi.product_id AND p.product_id = $prdId");
         return $query->rows;
     }
+    
+    public function getProductInfo($prdId){
+        $query = $this->db->query("SELECT * FROM" . DB_PREFIX . " product p where p.product_id = $prdId");
+        return $query->rows;
+    }
+    
+    public function getProductDiscount($prdId){
+        $query = $this->db->query("SELECT pdis.price FROM" . DB_PREFIX . " product p, product_discount pdis where p.product_id = pdis.product_id AND p.product_id = $prdId");
+        return $query->rows;
+    }
+    
+    public function getProductRelated($prdId){
+        $query = $this->db->query("SELECT * FROM" . DB_PREFIX . " product p, product_related pr where p.product_id = pr.product_id AND p.product_id = $prdId");
+        return $query->rows;
+    }
 }
 ?>

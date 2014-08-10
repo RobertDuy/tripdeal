@@ -1,4 +1,30 @@
 <?php echo $header; ?>
+
+<!--Function for a related product-->
+<?php 
+    function displayRelated($product){ ?>
+        <div class="itemProd">
+            <a href="#" class="imgProd">
+                <img src="<?php echo IMAGE_BASE.$dataImage[0]['image']; ?> ">>
+            </a>
+            <div class="desProd1">
+                <p class="name"><a href="#"> Du lich thai lan 5 sao:  Bangkok, Pattaya</a></p>
+                    <div class="divPriceInfo">
+                        <div class="priceOff">10<i>%</i></div>
+                        <div class="price">
+                            <p class="priceSale">500.000đ</p>
+                            <p class="priceNews">400.000<sup>đ</sup></p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+        <div class="divMeta">
+            <div class="icTime divCountdown"></div>
+        </div>
+        <i class="icSale"></i>
+    </div>        
+<?php } ?>
 <!-- End divMenu -->
 <div class="wrapProductImgOut">
     <div class="container">
@@ -33,9 +59,9 @@
             <div class="fillL"></div>
             <div class="fillR"></div>
             <div class="product-infoL">
-                <div class="product-star">Phan Thiết -</div>
-                <p class="product-title">Rock Water Bay Beach Resort &amp; Spa 2N1Đ + Ăn Tối + 2 Suất Tắm Bùn </p>
-                <div class="buy-number">89<br><span>đã mua</span></div>
+                <div class="product-star"><?php echo $prdInfo[0]['location']; ?></div>
+                <p class="product-title"><?php echo $dataModel[0]['name']; ?></p>
+                <div class="buy-number"><?php echo $prdInfo[0]['quantity']; ?><br><span>đã mua</span></div>
                 <div class="remain-time hasCountdown">
                     <div id="decountdown"></div>
                     <!--<div>18<br><span>ngày</span></div>
@@ -53,8 +79,8 @@
             </div>
             <div class="product-infoR">
                 <div class="buy-wrapper">
-                    <div class="list-price">Giá gốc: 2.890.000<sup>đ</sup>(-52%)</div>
-                    <div class="sell-price">1.385.000<sup>đ</sup></div>
+                    <div class="list-price">Giá gốc: <?php echo $prdInfo[0]['price']; ?><sup>đ</sup>(-<?php echo (integer)(100*(1 - $prdDiscount[0]['price']/$prdInfo[0]['price'])); ?>%)</div>
+                    <div class="sell-price"><?php echo $prdDiscount[0]['price']; ?><sup>đ</sup></div>
                     <button class="buttonBuy" type="button"></button>
                 </div>
             </div>
@@ -107,69 +133,7 @@
                     </div>
                     <p class="sec-title">Deal liên quan</p>
                     <div class="prodSibar">
-                        <div class="itemProd">
-                            <a href="#" class="imgProd">
-                                <img src="tripdeal/view/theme/default/image/issets/inboundTour.jpg">
-                            </a>
-                            <div class="desProd1">
-                                <p class="name"><a href="#"> Du lich thai lan 5 sao:  Bangkok, Pattaya</a></p>
-                                <div class="divPriceInfo">
-                                    <div class="priceOff">10<i>%</i></div>
-                                    <div class="price">
-                                        <p class="priceSale">500.000đ</p>
-                                        <p class="priceNews">400.000<sup>đ</sup></p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="divMeta">
-                                <div class="icTime divCountdown"></div>
-                            </div>
-                            <i class="icSale"></i>
-                        </div>
-                        <div class="itemProd">
-                            <a href="#" class="imgProd">
-                                <img src="tripdeal/view/theme/default/image/issets/inboundTour.jpg">
-                            </a>
-                            <div class="desProd1">
-                                <p class="name"><a href="#"> Du lich thai lan 5 sao:  Bangkok, Pattaya</a></p>
-                                <div class="divPriceInfo">
-                                    <div class="priceOff">10<i>%</i></div>
-                                    <div class="price">
-                                        <p class="priceSale">500.000đ</p>
-                                        <p class="priceNews">400.000<sup>đ</sup></p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="divMeta">
-                                <div class="icTime divCountdown"></div>
-                            </div>
-                            <i class="icSale"></i>
-                        </div>
-                        <div class="itemProd">
-                            <a href="#" class="imgProd">
-                                <img src="tripdeal/view/theme/default/image/issets/inboundTour.jpg">
-                            </a>
-                            <div class="desProd1">
-                                <p class="name"><a href="#"> Du lich thai lan 5 sao:  Bangkok, Pattaya</a></p>
-                                <div class="divPriceInfo">
-                                    <div class="priceOff">10<i>%</i></div>
-                                    <div class="price">
-                                        <p class="priceSale">500.000đ</p>
-                                        <p class="priceNews">400.000<sup>đ</sup></p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="divMeta">
-                                <div class="icTime divCountdown"></div>
-                            </div>
-                            <i class="icSale"></i>
-                        </div>
+                        <?php displayRelated(1); ?>
                         <div class="itemProd">
                             <a href="#" class="imgProd">
                                 <img src="tripdeal/view/theme/default/image/issets/inboundTour.jpg">
