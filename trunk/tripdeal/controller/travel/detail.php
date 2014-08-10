@@ -23,13 +23,26 @@
             } else {
                     $product_id = 35;
             }
-
+            // Get detail product
             $dataModel = $this->model_catalog_product->getDetailProduct($product_id);
             $this->data['dataModel'] = $dataModel;
 
+            // Get slide images
             $dataImage = $this->model_catalog_product->getProductImage($product_id);
             $this->data['dataImage'] = $dataImage;
+            
+            // Get Product info
+            $prdInfo = $this->model_catalog_product->getProductInfo($product_id);
+            $this->data['prdInfo'] = $prdInfo;
+            
+            // Get Product Discount
+            $prdDiscount = $this->model_catalog_product->getProductDiscount($product_id);
+            $this->data['prdDiscount'] = $prdDiscount;
 
+            // Get Product Discount
+            $prdRelated = $this->model_catalog_product->getProductRelated($product_id);
+            $this->data['prdRelated'] = $prdRelated;
+            
             $this->response->setOutput($this->render());
         }
     }
